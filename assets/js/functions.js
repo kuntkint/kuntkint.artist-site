@@ -43,9 +43,13 @@ function workLoad() {
 
     $('.thumb-unit').click(function() {
 
-        var spinner = '<div class="loader">Loading...</div>',
-            newHTML = '/work/work-1.html';
+        var $this = $(this),
+            newTitle = $this.find('strong').text(),
+            newFolder = $this.data('folder'),
+            spinner = '<div class="loader">Loading...</div>',
+            newHTML = '/work/'+ newFolder +'.html';
         $('.project-load').html(spinner).load(newHTML);
+        $('.project-title').text(newTitle);
     });
 
 }
