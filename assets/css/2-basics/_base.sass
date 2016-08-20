@@ -1,0 +1,50 @@
+// General
+
+body
+  background-color: white
+  font-size: 14px
+  line-height: 1.6
+  font-family: 'Open Sans', sans-serif
+  color: #666
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+
+h3
+  font:
+    size: 14px
+    weight: 700
+  text-transform: uppercase
+  color: $accent-light
+  text-align: center
+  padding: 100px 0 30px
+
+// Links
+
+a
+  color: $linkColor
+  text-decoration: none
+  outline: 0
+
+  &:hover,
+  &:focus
+    color: lighten($linkColor, 20%)
+
+// Selection Colors
+
+::selection
+  background: #FFF498
+
+::-moz-selection
+  background: #FFF498
+
+img::selection
+  background: transparent
+
+img::-moz-selection
+  background: transparent
+
+body
+  -webkit-tap-highlight-color: #FFF498
+
+svg
+  +size(100%)
